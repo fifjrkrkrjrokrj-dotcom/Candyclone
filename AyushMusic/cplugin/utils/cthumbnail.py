@@ -6,9 +6,9 @@ import aiohttp
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from unidecode import unidecode
 from py_yt import VideosSearch
-from PritiMusic import app
+from AyushMusic import app
 from config import YOUTUBE_IMG_URL
-from PritiMusic.utils.database import clonebotdb 
+from AyushMusic.utils.database import clonebotdb 
 
 def changeImageSize(maxWidth, maxHeight, image):
     widthRatio = maxWidth / image.size[0]
@@ -106,8 +106,8 @@ async def get_thumb(videoid, user_id, client):
         draw = ImageDraw.Draw(background)
         
         try:
-            arial = ImageFont.truetype("PritiMusic/assets/font2.ttf", 30)
-            font = ImageFont.truetype("PritiMusic/assets/font.ttf", 35)
+            arial = ImageFont.truetype("AyushMusic/assets/font2.ttf", 30)
+            font = ImageFont.truetype("AyushMusic/assets/font.ttf", 35)
         except:
             arial = ImageFont.load_default()
             font = ImageFont.load_default()

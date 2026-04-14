@@ -11,8 +11,8 @@ import aiofiles
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from py_yt import VideosSearch
-from PritiMusic import LOGGER
-from PritiMusic.utils.formatters import time_to_seconds
+from AyushMusic import LOGGER
+from AyushMusic.utils.formatters import time_to_seconds
 
 YT_API_KEY = "xbit_R6rvFnM-f8VSANzscJRQT7VqMv_nxpfX"
 YTPROXY = "https://tgapi.xbitcode.com"

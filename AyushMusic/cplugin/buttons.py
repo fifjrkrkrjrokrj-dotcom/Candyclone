@@ -1,6 +1,6 @@
 import math
 from pyrogram.types import InlineKeyboardButton
-from PritiMusic.utils.formatters import time_to_seconds
+from AyushMusic.utils.formatters import time_to_seconds
 import config
 
 def track_markup(_, videoid, user_id, channel, fplay):

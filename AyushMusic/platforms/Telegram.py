@@ -6,8 +6,8 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Voice
 
 import config
-from PritiMusic import app
-from PritiMusic.utils.formatters import (
+from AyushMusic import app
+from AyushMusic.utils.formatters import (
     check_duration,
     convert_bytes,
     get_readable_time,

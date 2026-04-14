@@ -1,15 +1,15 @@
 from pyrogram import filters, Client
 from pyrogram.types import Message
 
-from PritiMusic import app
-from PritiMusic.core.call import Lucky
-from PritiMusic.utils.database import set_loop
-from PritiMusic.utils.inline import close_markup
+from AyushMusic import app
+from AyushMusic.core.call import Aayu
+from AyushMusic.utils.database import set_loop
+from AyushMusic.utils.inline import close_markup
 from config import BANNED_USERS
-from PritiMusic.misc import db
+from AyushMusic.misc import db
 
 # ✅ IMPORT NEW ADMIN CHECKER (For Clone Support)
-from PritiMusic.cplugin.utils.decorators.admins import AdminRightsCheck
+from AyushMusic.cplugin.utils.decorators.admins import AdminRightsCheck
 
 @Client.on_message(
     filters.command(
@@ -25,7 +25,7 @@ async def stop_music(cli, message: Message, _, chat_id):
         return
     
     # Stream Stop Karega
-    await Lucky.stop_stream(chat_id)
+    await Aayu.stop_stream(chat_id)
     
     # Loop Reset Karega
     await set_loop(chat_id, 0)

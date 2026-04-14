@@ -1,8 +1,8 @@
-from PritiMusic.core.bot import Lucky
-from PritiMusic.core.dir import dirr
-from PritiMusic.core.git import git
-from PritiMusic.core.userbot import Userbot
-from PritiMusic.misc import dbb, heroku
+from AyushMusic.core.bot import Aayu
+from AyushMusic.core.dir import dirr
+from AyushMusic.core.git import git
+from AyushMusic.core.userbot import Userbot
+from AyushMusic.misc import dbb, heroku
 from pyrogram import Client
 from SafoneAPI import SafoneAPI
 from .logging import LOGGER
@@ -12,7 +12,7 @@ git()
 dbb()
 heroku()
 
-app = Lucky()
+app = Aayu()
 api = SafoneAPI()
 userbot = Userbot()
 

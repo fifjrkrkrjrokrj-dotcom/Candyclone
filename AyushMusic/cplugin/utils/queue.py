@@ -1,5 +1,5 @@
 # ✅ FIX: db import kiya (baaki files ke sath sync karne ke liye)
-from PritiMusic.misc import db
+from AyushMusic.misc import db
 
 
 async def put(

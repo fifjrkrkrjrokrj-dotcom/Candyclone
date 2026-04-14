@@ -36,7 +36,7 @@ UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
     "https://github.com/tmmteam/candyclone",
 )
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "AyushMusic")
 GIT_TOKEN = getenv("GIT_TOKEN", "")
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/frozenTools")

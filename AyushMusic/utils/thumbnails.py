@@ -32,7 +32,7 @@ def get_random_fallback_img():
         if isinstance(YOUTUBE_IMG_URL, list):
             return random.choice(YOUTUBE_IMG_URL)
         return YOUTUBE_IMG_URL
-    return "https://telegra.ph/file/2e3d368e77c449c287430.jpg" # Fallback
+    return "https://i.ibb.co/9kxWmZrY/file-4014.jpg" # Fallback
 
 async def get_thumb(videoid):
     if os.path.isfile(f"cache/{videoid}.png"):
@@ -87,16 +87,16 @@ async def get_thumb(videoid):
         # Handling Font Size (Compatible with old & new Pillow versions)
         try:
             # New Pillow
-            left, top, right, bottom = draw.textbbox((0, 0), "MADE BY VILLAIN     ", font=font)
+            left, top, right, bottom = draw.textbbox((0, 0), "AYUSH MUSIC     ", font=font)
             text_width = right - left
         except:
             # Old Pillow
             try:
-                text_width, _ = draw.textsize("MADE BY VILLAIN     ", font=font)
+                text_width, _ = draw.textsize("AYUSH MUSIC     ", font=font)
             except:
                 text_width = 300
 
-        draw.text((1280 - text_width - 10, 10), "MADE BY VILLAIN     ", fill="green", font=font)
+        draw.text((1280 - text_width - 10, 10), "AYUSH MUSIC     ", fill="green", font=font)
         
         draw.text(
             (55, 560),

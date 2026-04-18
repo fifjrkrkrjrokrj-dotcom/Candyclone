@@ -87,16 +87,16 @@ async def get_thumb(videoid):
         # Handling Font Size (Compatible with old & new Pillow versions)
         try:
             # New Pillow
-            left, top, right, bottom = draw.textbbox((0, 0), "AYUSH MUSIC     ", font=font)
+            left, top, right, bottom = draw.textbbox((0, 0), "AYUSH MUSIC", font=font)
             text_width = right - left
         except:
             # Old Pillow
             try:
-                text_width, _ = draw.textsize("AYUSH MUSIC     ", font=font)
+                text_width, _ = draw.textsize("AYUSH MUSIC", font=font)
             except:
                 text_width = 300
 
-        draw.text((1280 - text_width - 10, 10), "AYUSH MUSIC     ", fill="green", font=font)
+        draw.text((1280 - text_width - 10, 10), "AYUSH MUSIC", fill="green", font=font)
         
         draw.text(
             (55, 560),

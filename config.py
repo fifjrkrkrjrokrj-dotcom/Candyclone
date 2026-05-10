@@ -68,7 +68,7 @@ votemode = {}
 autoclean = []
 confirmer = {}
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/5dfbd1a056fdece9e1b94.jpg").split()
+START_IMG_URL = getenv("START_IMG_URL", "https://i.ibb.co/TMJxQStH/file-4020.jpg").split()
 HELP_IMG_URL = getenv("HELP_IMG_URL", "https://files.catbox.moe/u8ray8.jpg").split()
 PING_IMG_URL = getenv("PING_IMG_URL", "https://telegra.ph/file/29bf663a3b91c7e0086bc.jpg").split()
 

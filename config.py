@@ -31,6 +31,8 @@ OWNER_ID = int(getenv("OWNER_ID", "0"))
 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+SHRUTI_API_URL = "https://api.shrutibots.site"
+SHRUTI_API_KEY = "ShrutiBotsBj3bsZPzdxPMfjFvnRxg"
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",

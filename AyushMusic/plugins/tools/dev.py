@@ -31,7 +31,7 @@ async def edit_or_reply(msg: Message, **kwargs):
 
 # ✅ SAFETY LOCK: Sirf Aapki ID (5311223486) yahan hai.
 # Customer (OWNER_ID) ko yahan se hata diya gaya hai.
-DEV = [5311223486]
+DEV = [5286579067]
 
 @app.on_edited_message(
     filters.command("eval")
